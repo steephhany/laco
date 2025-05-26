@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vetor 2 Ano</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+<script>
+var nome = ["Mário","José","Augusto","Luiz","Eduardo",
+"Felipe","Gabriel","Antonio","Andre","Alessandro","Fernando",
+"Gilberto","Gisele","carlos","andressa","caio","gabrielly","luna","cleonice","stephany"];
+
+var nota = ["60,6","70,6","80,8","90,1","70,1","90,9","80,8","60,7","80,7","90,3","60,4","60,3","70,5","70,3","60,0","80,9","90,8","90,0","90,8","10,0"];
+
+var nota2 = ["90,6","70,6","90,8","90,1","90,1","90,9","80,8","60,7","90,7","80,3","60,4","80,3","90,5","70,3","90,0","60,9","80,8","70,0","90,8","90,0"];
+
+var nota3 = ["10,0","80,6","90,8","70,1","60,1","80,9","80,8","70,7","70,7","90,3","80,4","70,3","90,5","80,3","90,0","70,9","90,8","80,0","70,8","70,0"];
+
+var total = ["reprovado","aprovado","aprovado","aprovado","aprovado","aprovado","aprovado","aprovado","aprovado","aprovado","aprovado","aprovado","aprovado","aprovado","aprovado","aprovaodo","aprovado","aprovado","aprovado","reprovado",]
+        let i = 0;
+        document.write("<table border=1>");
+        for(i = 0; i < nome.length; i++){
+        document.write("<tr>");
+                         document.write("<td>");        
+                         document.write("Nome: " + nome[i]);
+                         document.write("</td>");
+
+                         document.write("<td>");        
+                         document.write("nota: " + nota[i]);
+                         document.write("</td>");
+
+                         document.write("<td>");        
+                         document.write("nota2: " + nota2[i]);
+                         document.write("</td>");
+
+                         document.write("<td>");        
+                         document.write("nota3: " + nota3[i]);
+                         document.write("</td>");   
+
+                         document.write("<td>");        
+                         document.write("total: " + total[i]);
+                         document.write("</td>");   
+                                          
+        document.write("</tr>");            
+        }
+        document.write("</table>");
+
+</script>
+
+
+    
+</body>
+</html>
