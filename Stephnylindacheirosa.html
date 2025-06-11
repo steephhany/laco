@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localizar</title>
+</head>
+<body>
+        <script>
+  var nome = ["Mário", "Eduardo", "Marcelo"];
+  var turma = ["1 Ano", "2 Ano", "3 Ano"];
+  var tri1 = [70, 50, 70];
+  var tri2 = [80, 50, 60];
+  var tri3 = [80, 50, 70];            
+
+        function seleciona(localizaLista){
+    nomeComparado = document.localizaLista.NOME.value;
+    turmaComparado = document.localizaLista.TURMA.value;
+            let i = 0;
+        document.write("<table border=1>");
+            for(i = 0; i < nome.length; i++){
+
+            if(nome[i].indexOf(nomeComparado) !== -1 ||
+            turma[i].indexOf(turmaComparado) !== -1
+            
+            ){
+
+            document.write("<tr>");    
+               document.write("<td>");
+                    document.write("Nome: " + nome[i]);
+               document.write("</td>");  
+               
+               document.write("<td>");
+                    document.write("Turma: " + turma[i]);
+               document.write("</td>");  
+
+            document.write("</tr>");  
+            }    
+
+            }
+
+           
+        document.write("</table>");    
+
+
+        }        
+
+
+        </script>
+
+
+    <form NAME="localizaLista">
+            <table>
+            <tr bgcolor=pink>
+                <td width=40 align="center">Nome</td>
+                <td width=40 align="center"><INPUT NAME="NOME" VALUE=""></td>
+               
+                <td width=40 align="center">Turma</td>
+                <td width=40 align="center"><INPUT NAME="TURMA" VALUE=""></td>    
+            </tr>
+            <tr>                                      
+<td width=80 align="center" colspan="4" bgcolor=pink>    
+    <input type="button" NAME="botao" VALUE="Localizar"
+    onClick="seleciona(localizaLista)">
+</td>                
+            </tr>        
+
+            </table>
+    </form>
+
+
+
+</body>
+</html>
